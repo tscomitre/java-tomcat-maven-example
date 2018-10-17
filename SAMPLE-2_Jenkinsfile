@@ -1,0 +1,21 @@
+pipeline {
+    /* A declarative pipeline */
+    agent any
+
+    stages {
+        agent ABC
+        stage ('Build') {
+            steps {
+                /* Steps of 'Build' stage */
+            }
+        }
+
+        agent XYZ
+        stage ('Deploy to Staging') {
+            /* Agent selection could go here as well */
+            steps {
+                /* Steps of 'Deploy to Staging' stage */
+            }
+        }
+    }
+}
