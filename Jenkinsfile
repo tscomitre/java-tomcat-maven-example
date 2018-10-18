@@ -5,7 +5,7 @@ pipeline {
 
         stage ('Build Servlet Project') {
             steps {
-                sh 'mvn clean package'
+                sh '/var/jenkins_home/apache-maven-3.5.4/bin/mvn clean package'
             }
 
             post {
