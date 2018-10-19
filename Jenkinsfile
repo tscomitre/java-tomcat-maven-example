@@ -4,7 +4,9 @@ pipeline {
     stages {
 
         stage ('Cleanup') {
-            cleanWs externalDelete: 'rm -rf *'
+            steps {
+                cleanWs externalDelete: 'rm -rf *'
+            }
         }
 
         stage ('Build Servlet Project') {
