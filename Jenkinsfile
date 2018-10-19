@@ -1,5 +1,9 @@
 pipeline {
 
+    tools {
+        maven 'local-maven'
+    }
+
     agent any
     stages {
 
@@ -11,7 +15,7 @@ pipeline {
 
         stage ('Build Servlet Project') {
             steps {
-                sh '/var/jenkins_home/apache-maven-3.5.4/bin/mvn clean package'
+                sh 'mvn clean package'
             }
 
             post {
