@@ -12,7 +12,7 @@
 
 <p>Deployed to production via PipeliceCODE</p>
 
-<p>JAMES - Test Deployment</p>
+<p>JAMES - This is a deployment via Jenkins</p>
 
 </body>
 </html>
